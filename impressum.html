@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITC Reuper - Dirk Reuper – Web-Visitenkarte</title>
+  <style>
+	  @font-face {
+	    font-family: 'Kandal';
+	    src: url('Kandal-Book.woff2') format('woff2'),
+  	    	 url('Kandal-Book.woff') format('woff'),
+    	     url('Kandal-Book.ttf') format('truetype');
+    	font-weight: normal;
+    	font-style: normal;
+    	font-display: swap;
+		}
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url("background.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      min-height: 100vh;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .karte {
+      background: #d2f0f9;
+      padding: 48px 36px;
+      max-width: 640px;
+      width: 100%;
+      box-shadow: 0 6px 32px rgba(0,0,0,0.12);
+      border-radius: 18px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .portrait {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #eee;
+      margin: 0 auto 18px;
+    }
+    h1 {
+      font-family: Kandal, 'Segoe UI', Arial, sans-serif;
+      font-size: clamp(3rem, 4vw, 4rem);
+      margin: 0 0;
+      color: midnightblue;
+    }
+    .titel {
+      font-family: Kandal, 'Segoe UI', Arial, sans-serif;
+      font-size: clamp(2rem, 3.5vw, 3rem);
+    }
+    .rolle {
+      font-style: italic;
+      font-size: clamp(1.6rem, 3vw, 2rem);
+      margin-bottom: 30px;
+    }
+    .kontakt {
+      font-size: 1.07rem;
+      color: #555;
+      line-height: 1.8;
+      margin-bottom: 10px;
+    }
+    .impressum-link {
+      color: #aaa;
+      font-size: 0.97rem;
+      margin-top: 22px;
+      text-decoration: none;
+    }
+    @media (max-width: 650px) {
+      .karte {
+        padding: 26px 7vw;
+        max-width: 99vw;
+      }
+      .portrait {
+        width: 80px; height: 80px;
+      }
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="karte">
+  <h1>Impressum</h1>
+  <div class="titel">
+    Angaben gemäß § 5 TMG:
+  </div>
+  <div class="kontakt">
+    Dirk Reuper<br/>
+    Danziger Str. 14<br/> 
+    D-61231 Bad Nauheim<br/>
+    <a href="mailto:info@itc-reuper">info@itc-reuper.de</a>
+  </div>
+  <div>
+    Inhaltlich Verantwortlicher gemäß § 18 Abs. 2 MStV: Dirk Reuper
+  </div>
+  <div>
+    <a href="javascript:history.back()" class="impressum-link">Zurück</a>
+  </div>
+</body>
+</html>
