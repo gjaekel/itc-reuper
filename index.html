@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITC Reuper - Dirk Reuper – Web-Visitenkarte</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url("background.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      min-height: 100vh;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .karte {
+      background: white;
+      padding: 48px 36px;
+      max-width: 640px;
+      width: 100%;
+      box-shadow: 0 6px 32px rgba(0,0,0,0.12);
+      border-radius: 18px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .portrait {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #eee;
+      margin: 0 auto 18px;
+    }
+    h1 {
+      font-size: clamp(3rem, 4vw, 4rem);
+      margin: 0 0;
+      color: midnightblue;
+    }
+    .titel {
+      font-size: clamp(2rem, 3.5vw, 3rem);
+    }
+    .rolle {
+      font-size: clamp(1.6rem, 3vw, 2rem);
+      margin-bottom: 30px;
+    }
+    .kontakt {
+      font-size: 1.07rem;
+      color: #555;
+      line-height: 1.8;
+      margin-bottom: 10px;
+    }
+    .impressum-link {
+      color: #aaa;
+      font-size: 0.97rem;
+      margin-top: 22px;
+      text-decoration: none;
+    }
+    @media (max-width: 650px) {
+      .karte {
+        padding: 26px 7vw;
+        max-width: 99vw;
+      }
+      .portrait {
+        width: 80px; height: 80px;
+      }
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="karte">
+    <!-- img src="portrait.jpg" alt="Portrait" class="portrait"-->
+    <h1>Dirk Reuper</h1>
+    <div class="titel">
+      Dipl.-Ing.
+    </div>
+    <div class="rolle">
+      Technology Consulting
+    </div>
+    <div>
+      <strong>Business Focus:</strong><br/>
+      <table border="0" cellpadding="8" cellspacing="0" style="width: 90%; margin-left: auto; margin-right: auto;"><tr>
+        <th>
+	  IT
+	</th><th>
+	  Building
+	</th>
+      </tr><tr>
+        <td>
+	  Data-Center Design
+	</td><td>
+	  Energy-efficient renovation
+        </td>
+      </tr><tr>
+        <td>
+	  Strategies Security/HA/MC
+	</td><td>
+	  Heat- and Powersupply
+        </td>
+      </tr><tr>
+        <td>
+	  Data-Center Relocation
+	</td><td>
+        </td>
+      </tr></table>
+    </div>
+    <div style="width:70%; margin-left: auto; margin-right: auto; text-align: left;">
+      Professional association: VDI<br/>
+      Club member: LINUX, UNIX-Groups, Automotiv Dynamics / Detailing<br/>
+      services provided as part of membership
+    </div>
+    <div class="kontakt">
+      Danziger Str. 14, D-61231 Bad Nauheim<br>
+      <a href="mailto:info@itc-reuper">info@itc-reuper.de</a>
+    </div>
+    <a href="impressum.html" class="impressum-link">Impressum</a>
+  </div>
+</body>
+</html>
